@@ -1,0 +1,24 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    nav
+      a(href='/') Home
+      a(href='/services') Our Services
+      a(href='/contacts') Contact Us
+    block content
+
+    section.hero
+        h1 Contact Us
+        p We would love to hear from you
+
+    section.contact
+      form(action='/submit' method='post')
+      label(for='name') Name:
+      input#name(type='text' name='name' required)
+      label(for='email') Email:
+      input#email(type='email' name='email' required)
+      label(for='message') Message:
+      textarea#message(name='message' required)
+      input(type='submit' value='Submit')

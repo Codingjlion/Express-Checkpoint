@@ -1,0 +1,56 @@
+// layout.pug
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Clothing Line
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    nav
+      a(href='/') Home
+      a(href='/services') Our Services
+      a(href='/contacts') Contact Us
+    block content
+
+// index.pug
+//- extends layout
+
+block content
+  section.hero
+    h1 Welcome to JLIONwears 
+    p Shop the latest styles and trends
+
+  section.featured
+    h2 Check out our latest collection
+  .product-cards-container
+   .product-card
+    img(src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gym-hoodies-2023-lead-6409f80a092ac.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart
+   .product-card
+    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTor0rL_SEXU-5DTytq6VjhVWtSNGY3oZ06hg&usqp=CAU' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart
+    .product-card
+    img(src='https://www.spalding.com/dw/image/v2/ABAH_PRD/on/demandware.static/-/Sites-masterCatalog_SPALDING/default/dw93a74295/images/hi-res/RH8S287_Heather_39654.jpg?sw=338&sh=426&sm=cut&sfrm=jpg' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart
+   .product-card
+    img(src='https://hips.hearstapps.com/hmg-prod/images/stylish-hoodies-1635187344.jpg' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart
+    .product-card
+    img(src='https://www.spalding.com/dw/image/v2/ABAH_PRD/on/demandware.static/-/Sites-masterCatalog_SPALDING/default/dw93a74295/images/hi-res/RH8S287_Heather_39654.jpg?sw=338&sh=426&sm=cut&sfrm=jpg' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart
+   .product-card
+    img(src='https://hips.hearstapps.com/hmg-prod/images/stylish-hoodies-1635187344.jpg' alt='Hoodie')
+    h3 Hoodie
+    p Our comfortable hoodie is perfect for everyday wear. It's made of high-quality fabric that's both soft and durable.
+    button Add to Cart

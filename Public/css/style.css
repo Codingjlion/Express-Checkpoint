@@ -1,0 +1,217 @@
+/* style.css */
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  /* Navigation bar */
+  nav {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #c9c9c9;
+  }
+  
+  /* Hero section */
+  section.hero {
+    background-image: url('https://images.prismic.io/greenly/NWVlYjRhZWEtNWRhNi00ZjQ0LTlmMmEtN2FhYWQ2YTczNTk5_62c7099f021cd6fb43da8081_all-you-need-to-know-about-fast-fashion.jpg?auto=compress,format&rect=0,0,1280,853&w=1280&h=853');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  section.hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  section.hero p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Featured products section */
+  section.featured {
+    background-color: black;
+    padding: 50px;
+    width: 100% !important;
+  }
+  
+  section.featured h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  section.services{
+    background-color: black;
+    padding: 50px;
+  }
+
+  section.services ul{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  
+
+  section.contact{
+    background-color: black;
+    padding: 70px;
+  }
+
+  section.contact label{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  section.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type='submit'] {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type='submit']:hover {
+    background-color: #444;
+  }
+  
+ 
+  
+  
+  /* Product card */
+  section.featured {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* grid-gap: 10px; */
+    padding: 30px;
+   
+
+  }
+  
+  .product-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    /* grid-auto-rows: 1fr; */
+  }
+  
+  .product-card {
+    background-color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 350px;
+    margin: 0 auto;
+    
+  }
+  
+  .product-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 1.2rem;
+    color: #999;
+    margin-bottom: 20px;
+  }
+  
+  .product-card button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .product-card button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+  }
+  
+  
+  /*
+  
